@@ -1,0 +1,327 @@
+﻿@using WebApplication1.Models
+@model List<Products>
+
+@{
+    ViewData["Title"] = "Temizlik";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/styletemizlik.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+
+<div class="a">
+    <div class="container" id="orta1">
+        <div class="row">
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Urunler/">Avukatlık-Hukuk</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Cicek/">Çiçek-Peyzaj</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Otomotiv/">Otomotiv</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Temizlik/" style="font-weight: bold">Temizlik</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Insaat/">İnşaat-Mimarlık</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Gida/">Gıda-Restaurant</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Danismanlik/">Danışmanlık</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Saglik/">Sağlık</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Blog/">Blog</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Turizm/">Turizm</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Is/">İş-Hizmet</a></p>
+            </div>
+
+            <div class="col-sm-12 col-md-2" id="menu2">
+                <p id="baslik"><a href="/Product/Sigorta/">Sigorta</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bu Web Sayfasını Beğendiniz Mi?</h4>
+                    <buton type="button" class="close" data-dismiss="modal">&times;</buton>
+                </div>
+
+                <div class="modal-body justify-content-center">
+                    <img src="/tasarimlar/temizlik/86.jpg" width="100%">
+                </div>
+
+                <div class="modal-footer" id="modalalt">
+                    <form action="/Product/Ekle">
+                        <input name="ProductName" value="Temizlik" type="hidden" />
+                        <input name="Price" value="100" type="hidden" />
+                        <input name="Category" value="Temizlik" type="hidden" />
+                        <button style="background-color:#FB5369;border:1px solid #FB5369; width:200px;height:45px;color:white;font-size:20px;" type="submit" class="btn btn-success">Sepete Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bu Web Sayfasını Beğendiniz Mi?</h4>
+                    <buton type="button" class="close" data-dismiss="modal">&times;</buton>
+                </div>
+
+                <div class="modal-body justify-content-center">
+                    <img src="/tasarimlar/temizlik/87.jpg" width="100%">
+                </div>
+
+                <div class="modal-footer" id="modalalt">
+                    <form action="/Product/Ekle">
+                        <input name="ProductName" value="Temizlik" type="hidden" />
+                        <input name="Price" value="100" type="hidden" />
+                        <input name="Category" value="Temizlik" type="hidden" />
+                        <button style="background-color:#FB5369;border:1px solid #FB5369; width:200px;height:45px;color:white;font-size:20px;" type="submit" class="btn btn-success">Sepete Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bu Web Sayfasını Beğendiniz Mi?</h4>
+                    <buton type="button" class="close" data-dismiss="modal">&times;</buton>
+                </div>
+
+                <div class="modal-body justify-content-center">
+                    <img src="/tasarimlar/temizlik/88.jpg" width="100%">
+                </div>
+
+                <div class="modal-footer" id="modalalt">
+                    <form action="/Product/Ekle">
+                        <input name="ProductName" value="Temizlik" type="hidden" />
+                        <input name="Price" value="100" type="hidden" />
+                        <input name="Category" value="Temizlik" type="hidden" />
+                        <button style="background-color:#FB5369;border:1px solid #FB5369; width:200px;height:45px;color:white;font-size:20px;" type="submit" class="btn btn-success">Sepete Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal4">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bu Web Sayfasını Beğendiniz Mi?</h4>
+                    <buton type="button" class="close" data-dismiss="modal">&times;</buton>
+                </div>
+
+                <div class="modal-body justify-content-center">
+                    <img src="/tasarimlar/temizlik/89.jpg" width="100%">
+                </div>
+
+                <div class="modal-footer" id="modalalt">
+                    <form action="/Product/Ekle">
+                        <input name="ProductName" value="Temizlik" type="hidden" />
+                        <input name="Price" value="100" type="hidden" />
+                        <input name="Category" value="Temizlik" type="hidden" />
+                        <button style="background-color:#FB5369;border:1px solid #FB5369; width:200px;height:45px;color:white;font-size:20px;" type="submit" class="btn btn-success">Sepete Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal5">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bu Web Sayfasını Beğendiniz Mi?</h4>
+                    <buton type="button" class="close" data-dismiss="modal">&times;</buton>
+                </div>
+
+                <div class="modal-body justify-content-center">
+                    <img src="/tasarimlar/temizlik/90.jpg" width="100%">
+                </div>
+
+                <div class="modal-footer" id="modalalt">
+                    <form action="/Product/Ekle">
+                        <input name="ProductName" value="Temizlik" type="hidden" />
+                        <input name="Price" value="100" type="hidden" />
+                        <input name="Category" value="Temizlik" type="hidden" />
+                        <button style="background-color:#FB5369;border:1px solid #FB5369; width:200px;height:45px;color:white;font-size:20px;" type="submit" class="btn btn-success">Sepete Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal6">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bu Web Sayfasını Beğendiniz Mi?</h4>
+                    <buton type="button" class="close" data-dismiss="modal">&times;</buton>
+                </div>
+
+                <div class="modal-body justify-content-center">
+                    <img src="/tasarimlar/temizlik/91.jpg" width="100%">
+                </div>
+
+                <div class="modal-footer" id="modalalt">
+                    <form action="/Product/Ekle">
+                        <input name="ProductName" value="Temizlik" type="hidden" />
+                        <input name="Price" value="100" type="hidden" />
+                        <input name="Category" value="Temizlik" type="hidden" />
+                        <button style="background-color:#FB5369;border:1px solid #FB5369; width:200px;height:45px;color:white;font-size:20px;" type="submit" class="btn btn-success">Sepete Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal7">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bu Web Sayfasını Beğendiniz Mi?</h4>
+                    <buton type="button" class="close" data-dismiss="modal">&times;</buton>
+                </div>
+
+                <div class="modal-body justify-content-center">
+                    <img src="/tasarimlar/temizlik/92.jpg" width="100%">
+                </div>
+
+                <div class="modal-footer" id="modalalt">
+                    <form action="/Product/Ekle">
+                        <input name="ProductName" value="Temizlik" type="hidden" />
+                        <input name="Price" value="100" type="hidden" />
+                        <input name="Category" value="Temizlik" type="hidden" />
+                        <button style="background-color:#FB5369;border:1px solid #FB5369; width:200px;height:45px;color:white;font-size:20px;" type="submit" class="btn btn-success">Sepete Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal8">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Bu Web Sayfasını Beğendiniz Mi?</h4>
+                    <buton type="button" class="close" data-dismiss="modal">&times;</buton>
+                </div>
+
+                <div class="modal-body justify-content-center">
+                    <img src="/tasarimlar/temizlik/93.jpg" width="100%">
+                </div>
+
+                <div class="modal-footer" id="modalalt">
+                    <form action="/Product/Ekle">
+                        <input name="ProductName" value="Temizlik" type="hidden" />
+                        <input name="Price" value="100" type="hidden" />
+                        <input name="Category" value="Temizlik" type="hidden" />
+                        <button style="background-color:#FB5369;border:1px solid #FB5369; width:200px;height:45px;color:white;font-size:20px;" type="submit" class="btn btn-success">Sepete Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid justify-content-center" id="orta2">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3" id="kutu2" align="center"><img src="/tasarimlar/temizlik/86.jpg" class="img-fluid" id="resim" data-toggle="modal" data-target="#modal1"><p id="sayi">27</p><p id="kategori">Temizlik</p><p style="font-weight: bold">100₺</p></div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="kutu2" align="center"><img src="/tasarimlar/temizlik/87.jpg" class="img-fluid" id="resim" data-toggle="modal" data-target="#modal2"><p id="sayi">28</p><p id="kategori">Temizlik</p><p style="font-weight: bold">100₺</p></div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="kutu2" align="center"><img src="/tasarimlar/temizlik/88.jpg" class="img-fluid" id="resim" data-toggle="modal" data-target="#modal3"><p id="sayi">29</p><p id="kategori">Temizlik</p><p style="font-weight: bold">100₺</p></div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="kutu2" align="center"><img src="/tasarimlar/temizlik/89.jpg" class="img-fluid" id="resim" data-toggle="modal" data-target="#modal4"><p id="sayi">30</p><p id="kategori">Temizlik</p><p style="font-weight: bold">100₺</p></div>
+        </div> <br>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3" id="kutu2" align="center"><img src="/tasarimlar/temizlik/90.jpg" class="img-fluid" id="resim" data-toggle="modal" data-target="#modal5"><p id="sayi">31</p><p id="kategori">Temizlik</p><p style="font-weight: bold">100₺</p></div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="kutu2" align="center"><img src="/tasarimlar/temizlik/91.jpg" class="img-fluid" id="resim" data-toggle="modal" data-target="#modal6"><p id="sayi">32</p><p id="kategori">Temizlik</p><p style="font-weight: bold">100₺</p></div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="kutu2" align="center"><img src="/tasarimlar/temizlik/92.jpg" class="img-fluid" id="resim" data-toggle="modal" data-target="#modal7"><p id="sayi">33</p><p id="kategori">Temizlik</p><p style="font-weight: bold">100₺</p></div>
+            <div class="col-sm-12 col-md-6 col-lg-3" id="kutu2" align="center"><img src="/tasarimlar/temizlik/93.jpg" class="img-fluid" id="resim" data-toggle="modal" data-target="#modal8"><p id="sayi">34</p><p id="kategori">Temizlik</p><p style="font-weight: bold">100₺</p></div>
+        </div> <br>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

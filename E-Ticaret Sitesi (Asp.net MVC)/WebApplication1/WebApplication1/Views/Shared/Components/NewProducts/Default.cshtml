@@ -1,0 +1,21 @@
+﻿@model IEnumerable<WebApplication1.Models.Products>
+<table class="table table-bordered">
+    <tr>
+        <th>Ürün No'su</th>
+        <th>Ürün Adı</th>
+        <th>Fiyat</th>
+        <th>Kategori Adı</th>
+    </tr>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.ProductID</td>
+            <td>@p.ProductName</td>
+            <td>@p.Price</td>
+            <td>@p.Category</td>
+        </tr>
+    }
+</table>
+<div>
+    Burası components
+</div>

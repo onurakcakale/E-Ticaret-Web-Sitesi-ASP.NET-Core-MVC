@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/styleiletisim.css">
+<link rel="stylesheet" href="/css/stylehizmetlerimiz.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<div class="iletisim" style="padding-top:50px; padding-bottom:100px">
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-2">
+
+            </div>
+
+            <div class="col-sm-12 col-md-8" style="margin: auto; padding-top: 80px; padding-bottom: 150px;">
+                <div class="login-sign">
+                    <div style="margin: auto">
+                        <form action="#" method="post">
+                            <div style="align-content:center;"><h1 style="font-family:Muli, sans-serif; text-align:center; font-size: 40px;"><b>Giriş Yap</b></h1></div>
+                            <div style="align-content:center; padding-left:300px;"><p style="font-family: Muli, sans-serif; font-size: 18px; margin-top: 50px;">Kullanıcı Adı</p></div>
+                            <div style="align-content:center; padding-left:300px;"><input style="width:60%; height:40px;" class="form-control mr-sm-2" type="text" name="Kullanici"></div>
+                            <div style="align-content:center; padding-left:300px;"><p style="font-family:Muli, sans-serif;font-size:18px;margin-top:20px;">Şifre</p></div>
+                            <div style="align-content:center; padding-left:300px;"><input style="width:60%; height:40px;" class="form-control mr-sm-2" type="password" name="Sifre"></div>
+
+                            <div style="height:25px;top:10px; padding-left:300px;" class="login-item">
+                                <input style="width:14px;height:14px;float:left;margin-top:7px;" class="form-control mr-sm-2" type="checkbox">
+                                <p id="login-kay1">Şifreyi göster</p>
+                            </div>
+
+                            <div style="float:left; padding-top: 50px; padding-left:300px;" class="login-item">
+                                <button style="background-color:#FB5369;border:1px solid #FB5369; width:200px;height:45px;color:white;font-size:20px;" type="submit" class="btn btn-success">Giriş Yap</button>
+                            </div>
+
+                            <div style="float: left; padding-top: 60px; padding-left: 20px;">
+                                <a style="color:#6B6B6B;" href="#">Şifrenizi Unuttunuz Mu?</a>
+                            </div><br />
+                        </form>
+                    </div>
+                </div>
+
+                <div style="padding-top: 100px; padding-left: 300px;">
+                    <a style="color:#6B6B6B;text-decoration:underline;font-size:20px;" href="/Order/Register/">Henüz Kayıt Olmadınız Mı?</a>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-2">
+
+            </div>
+        </div>
+    </div>
+</div>

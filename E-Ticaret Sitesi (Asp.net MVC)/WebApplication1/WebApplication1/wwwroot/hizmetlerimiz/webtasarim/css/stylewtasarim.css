@@ -1,0 +1,109 @@
+.orta{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#head{
+    background-color: #22427d;
+    line-height: 120px;
+}
+
+#baslik{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.sol-menu{
+    text-decoration: none;
+    list-style-type: none;
+    position: sticky;
+    top: 64px;
+}
+
+.sol-menu li a{
+    text-decoration: none;
+}
+
+.sol-menu li ul{
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.sol-menu>li.active>a{
+    background-color: #FB5369;
+    font-weight: 700;
+    color: #fff;
+    border-left-color: #f94e61;
+}
+
+.sol-menu>li.active>a:hover{
+    text-decoration: none;
+}
+
+.sol-menu>li.active>ul>li>a {
+    display: block;
+    line-height: 44px;
+    font-size: 18px;
+    color: #a1a1a1;
+    transition: all .2s linear;
+}
+
+.sol-menu>li>a{
+    background-color: #fff;
+    line-height: 64px;
+    font-size: 20px;
+    display: block;
+    border-radius: 4px;
+    padding: 0 32px 0 24px;
+    border-left: 4px solid rgba(0,0,0,.1);
+    transition: all .2s linear;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.sol-menu>li>a:hover{
+    background-color: #FB5369;
+    color: white;
+}
+
+.sol-menu .active ul a:hover{
+    color: black;
+}
+
+
+#sol{
+    margin-top: 45px;
+}
+
+#sagbaslik{
+    font-weight: bold;
+    color: #22427d;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+#sagbaslik2{
+    font-weight: bold;
+    color: #22427d;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.sag1{
+    margin-top: 45px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-left: 56px;
+    padding-right: 100px;
+    padding-bottom: 70px;
+    background-color: white;
+}
+
+.text{
+    font-size: 18px;
+    line-height: 1.56;
+    font-family: Arial;
+    color: #444444;
+}

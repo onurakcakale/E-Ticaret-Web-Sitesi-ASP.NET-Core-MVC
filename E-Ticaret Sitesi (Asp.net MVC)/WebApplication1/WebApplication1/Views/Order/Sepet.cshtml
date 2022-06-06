@@ -1,0 +1,71 @@
+﻿@using WebApplication1.Models
+@model List<Products>
+
+@{
+    ViewData["Title"] = "Sepet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/styleiletisim.css">
+<link rel="stylesheet" href="/css/stylehizmetlerimiz.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<div class="iletisim" style="padding-bottom:450px">
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-1">
+                
+            </div>
+
+            <div class="col-sm-12 col-md-10">
+                <br><br><br>
+                <h3>Sepetiniz</h3>
+                <table class="table">
+                    <tr>
+                        <td>ID</td>
+                        <td>Ürün Kategorisi</td>
+                        <td>Fiyatı</td>
+                        <td></td>
+                    </tr>
+
+                    @foreach (var x in Model)
+                    {
+                        <tr>
+                            <td>@x.ProductID</td>
+                            <td>@x.ProductName</td>
+                            <td>@x.Price ₺</td>
+                            <td align="center">@Html.ActionLink("Sepetten Kaldır", "UrunSil", new { id = x.ProductID }, new { @class = "btn btn-danger" })</td>
+                        </tr>
+                    }
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="3" style="font-size:18px;font-weight:bold;">Toplam: @Model.Sum(p => p.Price) ₺</td>
+                </tr>
+                </table>
+                <br />
+
+                <div class="incele" style="width: 200px; height:40px; line-height:35px; float:left">
+                    <a href="/Product/Urunler/">
+                        <p id="p" style="padding-left:25px">Alışverişe Devam Et</p>
+                    </a>
+                </div>
+
+                <div class="incele" style="width: 200px; height:40px; line-height:35px; float:left; margin-left:20px">
+                    <a href="/Order/Checkout/">
+                        <p id="p" style="padding-left:35px">Siparişi Tamamla</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-1">
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+﻿@using WebApplication1.Models
+@model List<Products>
+
+@{
+    ViewData["Title"] = "Seo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/hizmetlerimiz/seo/css/styleseo.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<div class="jumbotron jumbotron-fluid text-white" id="head">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <p id="baslik">Sizin için ne yapabiliriz beraber bakalım.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="orta">
+    <div class="container" id="hizmetlerimiz">
+        <div class="row">
+            <div class="col-sm-12 col-md-4" id="sol">
+                <ul class="sol-menu">
+                    <li>
+                        <a href="../webtasarim/wtasarim.html">
+                            Web Tasarım
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Order/WebYazilim/">Web Yazılım</a>
+                    </li>
+                    <li class="active">
+                        <a href="/Order/WebYazilim/">Dijital Pazarlama</a>
+                        <ul>
+                            <li class="solalt">
+                                <a href="#pazarlama">
+                                    Etkileyici Pazarlama
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#reklam">
+                                    Web Reklam Yönetimi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#seo">
+                                    Seo
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-sm-12 col-md-8">
+                <div class="row">
+                    <div class="col-sm-12" id="dijital">
+                        <div class="sag1">
+                            <div class="image">
+                                <img src="/hizmetlerimiz/seo/images/3.png" width="120px">
+                            </div>
+                            <p id="sagbaslik">Dijital Pazarlama</p>
+
+                            <div class="text">
+                                <p>Web sitenizin veya işletmenizin, daha popüler hale gelmesi için çeşitli hizmetler sunuyoruz. Reklam, marka ve e-ticaret danışmanlığı hizmetlerimiz sayesinde, daha düşük maliyetlerle daha çok müşteri/satış elde edebilirsiniz.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12" id="pazarlama">
+                        <div class="sag1">
+                            <div class="image">
+                                <img src="/hizmetlerimiz/seo/images/a.png" width="120px">
+                            </div>
+                            <p id="sagbaslik">Etkileyici Pazarlama</p>
+
+                            <div class="text">
+                                <p>Ürünlerinizin veya işletmelerinizin tanıtımını sağlamak için sosyal medya fenomenlerinin; Youtube, Facebook, Twitter, Periscope ve Instagram gibi sosyal medya hesaplarında tanıtımlarınızı sağlıyoruz. Bu sayede, markanız daha güçlü ve ürünleriniz daha tanınmış bir hale gelmektedir.Tüm detaylar için bize ulaşabilirsiniz.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12" id="reklam">
+                        <div class="sag1">
+                            <div class="image">
+                                <img src="/hizmetlerimiz/seo/images/b.png" width="120px">
+                            </div>
+                            <p id="sagbaslik">Web Reklam Yönetimi</p>
+
+                            <div class="text">
+                                <p>
+                                    Google Adwords ve Facebook gibi reklam platformlarında yapılan, reklam hesabı yönetim çalışmalarıdır. Bu çalışmalar, doğru hedef kitle ve doğru anahtar kelimelerin seçiminin yapılması ile başlamaktadır.
+                                    <br><br>
+                                    Bulunduğunuz sektöre özel şekilde analizler yapılır. Analizler sonucunda; aylık reklam maliyetleriniz, erişebileceğiniz kitle ve kişi sayıları size sunulmaktadır. Reklam danışmanlığı hizmeti; size, minimum harcama yapıp elde edebileceğiniz maksimum müşteri sayısına ulaşmanızı sağlamaktadır.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12" id="seo">
+                        <div class="sag1">
+                            <div class="image">
+                                <img src="/hizmetlerimiz/seo/images/c.png" width="180px">
+                            </div>
+                            <p id="sagbaslik">Seo</p>
+
+                            <div class="text">
+                                <p>
+                                    Arama motorlarında üst sıralarda yer almak için yapılan çalışmalar bütünüdür. İlk olarak, web sitenizin iç yapısında analizler yapılır ve düzeltme raporları hazırlanır. Düzeltme işlemi sonrasında, web sitenizin popüler hale getirilmesi için tanıtımlar yapılır.
+                                    <br><br>
+                                    Bu çalışmalar, titizlik ve doğru zamanlama ile yapılmalıdır. Aksi, durumda, web siteniz bu durumdan zarar görebilir.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>     

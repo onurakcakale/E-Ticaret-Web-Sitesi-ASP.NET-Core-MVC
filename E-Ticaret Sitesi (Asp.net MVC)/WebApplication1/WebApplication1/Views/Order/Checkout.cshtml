@@ -1,0 +1,43 @@
+﻿@model WebApplication1.Models.Order
+
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/styleiletisim.css">
+<link rel="stylesheet" href="/css/stylehizmetlerimiz.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+
+<div class="iletisim" style="padding-bottom:100px">
+    <div class="container-fluid" id="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-1">
+
+            </div>
+
+            <div class="col-sm-12 col-md-10">
+                <br><br><br>
+                <div><h2>Bilgileriniz</h2></div><br /><br />
+                <form class="form-group" method="post">
+                    <b>Ad: @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })</b> <br />
+                    <b>Ülke: @Html.TextBoxFor(x => x.Country, new { @class = "form-control" })</b> <br />
+                    <b>Şehir: @Html.TextBoxFor(x => x.City, new { @class = "form-control" })</b> <br />
+                    <b>İlçe: @Html.TextBoxFor(x => x.State, new { @class = "form-control" })</b> <br />
+                    <b>Adres: @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })</b> <br />
+                    <b>Posta Kodu: @Html.TextBoxFor(x => x.Zip, new { @class = "form-control" })</b> <br />
+                    <div>
+                        <a href="/Order/Checkout/">
+                            <button style="background-color:#FB5369;border:1px solid #FB5369; width:200px;height:45px;color:white;font-size:20px;" type="submit" class="btn btn-success">Siparişi Tamamla</button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-sm-12 col-md-1">
+
+            </div>
+        </div>
+    </div>
+</div>

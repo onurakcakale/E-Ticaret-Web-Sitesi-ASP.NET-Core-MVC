@@ -1,0 +1,112 @@
+﻿@using WebApplication1.Models
+@model List<Products>
+
+@{
+    ViewData["Title"] = "WebYazilim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/hizmetlerimiz/webyazilim/css/stylewyazilim.css">
+<link rel="stylesheet" href="/css/bootstrap.css">
+
+<div class="jumbotron jumbotron-fluid text-white" id="head">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <p id="baslik">Sizin için ne yapabiliriz beraber bakalım.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="orta">
+    <div class="container" id="hizmetlerimiz">
+        <div class="row">
+            <div class="col-sm-12 col-md-4" id="sol">
+                <ul class="sol-menu">
+                    <li>
+                        <a href="/Order/WebYazilim">
+                            Web Tasarım
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="/Order/WebYazilim/">Web Yazılım</a>
+                        <ul>
+                            <li class="solalt">
+                                <a href="#proje">
+                                    Özel Proje Geliştirme
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#is">
+                                    İş süreç Takibi Yazılımları
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="/Order/Seo/">Dijital Pazarlama</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-sm-12 col-md-8">
+                <div class="row">
+                    <div class="col-sm-12" id="webtasarim">
+                        <div class="sag1">
+                            <div class="image">
+                                <img src="/hizmetlerimiz/webyazilim/images/2.png" width="120px">
+                            </div>
+                            <p id="sagbaslik">Web Yazılım</p>
+
+                            <div class="text">
+                                <p>
+                                    Hayalini kurduğunuz ve hayata geçirmek istediğiniz web yazılım projelerinizi gerçekleştiriyoruz.
+                                    <br><br>
+                                    Projelerinizin hayat bulması için, "bir iş yazılım/kodlama ile yapılabiliyorsa biz o işi yaparız." prensibini benimsedik.
+                                    <br><br>
+                                    Web ve mobil uygulama yazılımı projelerinizi dinleyelim, projelendirelim, yapalım ve teslim edelim. Sonrasında ise destek verelim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12" id="proje">
+                        <div class="sag1">
+                            <div class="image">
+                                <img src="/hizmetlerimiz/webyazilim/images/b.png" width="120px">
+                            </div>
+                            <p id="sagbaslik">Özel Proje Geliştirme</p>
+
+                            <div class="text">
+                                <p>
+                                    Hayata geçirmek istediğiniz web ve mobil tabanlı yazılım projelerinin gerçekleşmesini sağlamaktayız. İstediğiniz yazılım projesinin detayları sizden alınır ve projelendirme kapsamında, gerekli özelliklerin raporlanması sağlanır.
+                                    <br><br>
+                                    Proje kapsamında hazırlanan tasarımlar, tüm mobil cihaz ve tabletlerle uyumludur. Projelendirme aşaması sonrasında, projenin tasarım çizimi ve kodlama işlemleri yapılır. ardından tasarım ve yazılım arasındaki entegrasyon sağlanır. Projenizin kod yapısı gereksiz kodlardan arındırıldığı için hızlı çalışır. Gereken test ve kontrollerden geçtiği taktirde yayına hazır hale gelir.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12" id="is">
+                        <div class="sag1">
+                            <div class="image">
+                                <img src="/hizmetlerimiz/webyazilim/images/c.png" width="120px">
+                            </div>
+                            <p id="sagbaslik">İş Süreç Takibi Yazılımları</p>
+
+                            <div class="text">
+                                <p>
+                                    Tüm ERP ve CRM programlarınız ile entegre şekilde çalışabilen, iş süreçlerinizi takip edebileceğiniz ve ihtiyaçlarınıza özel şekilde yazılımların üretilebildiği, otomasyon sistemleridir.
+                                    <br><br>
+                                    Bu yazılımlar ERP ve CRM programlarından bağımsız bir şekilde, tümüyle size özel olarak da oluşturulabilir. Bu otomasyon ve takip sistemi sayesinde, firmanızın belirli ihtiyaçlarını otomatik hale getirebilir ve iş yerinizde oluşan zaman karmaşasının önüne geçebilirsiniz. Tüm talepleriniz ve sorularınız için bize ulaşabilirsiniz.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>     
